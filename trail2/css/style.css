@@ -1,0 +1,139 @@
+*{
+
+}
+
+.wrapper{
+	position: relative;
+}
+
+.intro{
+	background:url(../images/background.jpg);
+	height : 800px;
+	color: white;
+}
+
+.intro-heading{
+	position: absolute;
+	top:200px;
+	left:100px;
+	visibility:hidden;
+}
+
+.logo{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.intro-heading h1{
+	font-family: 'Slabo 27px', serif;
+	color: #c6d4fb;
+	font-size: 38px;
+}
+
+.intro-cont{
+	position: absolute;
+	font-family:'Pacifico', cursive;
+	width: 300px;
+	top:320px;
+	left: 30px;
+	visibility: hidden;
+}
+
+.intro-cont p{
+	font-size: 18px;
+}
+
+.extra-cont{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 250px;
+	visibility: hidden;
+}
+
+.shield1{
+	visibility: hidden;
+	position: absolute;
+}
+
+.shield2{
+	visibility: hidden;
+	position: absolute;
+}
+
+.shield3{
+	visibility: hidden;
+	position: absolute;
+}
+
+.shield1.bounceIn{
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-delay: 2s;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-delay: 2s;
+	-o-animation-duration: 1s;
+ 	-o-animation-delay: 2s;
+	animation-duration: 1s;
+ 	animation-delay: 2s;
+}
+
+.shield2.bounceIn{
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-delay: 2s;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-delay: 2s;
+	-o-animation-duration: 1s;
+ 	-o-animation-delay: 2s;
+	animation-duration: 1s;
+ 	animation-delay: 2s;
+}
+
+.shield3.bounceIn{
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-delay: 2s;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-delay: 2s;
+	-o-animation-duration: 1s;
+ 	-o-animation-delay: 2s;
+	animation-duration: 1s;
+ 	animation-delay: 2s;
+}
+
+.shield1 img{
+	width: 200px;
+}
+
+.shield2 img{
+	width: 200px;
+}
+.shield3 img{
+	width: 200px;
+}
+
+.shield-container{
+	position: relative;
+}
+
+.shield-text{
+	position: absolute;
+	top:85px;
+	left: 60px;
+	color: white;
+	z-index: 2;
+}
+
+.shield-text p {
+	color: #01fff2;
+	font-weight: bolder;
+	font-size: 22px;
+}
+
+.shield2 .shield-text{
+	left: 48px;
+}
+
+
+.shield3 .shield-text{
+	left: 75px;
+}
