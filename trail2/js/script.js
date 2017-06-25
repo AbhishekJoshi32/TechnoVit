@@ -88,6 +88,6 @@ $(document).on("click", ".shield1", function() {
 		top:screen.height/3,
 		left:screen.height/3,
 		height:80%
-	})
+	});
 
 });
