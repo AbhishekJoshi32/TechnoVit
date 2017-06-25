@@ -1,3 +1,4 @@
+new WOW().init();
 
 var homeHtml = "snippets/home-snippet.html";
 var delay = 5000;
@@ -81,4 +82,12 @@ function shieldAnimations(){
 		});;
 	}
 
-new WOW().init();
+
+$(document).on("click", ".shield1", function() {	
+	$('.shield1').animate({
+		top:screen.height/3,
+		left:screen.height/3,
+		height:80%;
+	})
+
+});
