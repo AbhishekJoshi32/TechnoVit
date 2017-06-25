@@ -85,9 +85,9 @@ function shieldAnimations(){
 
 $(document).on("click", ".shield1", function() {	
 	$('.shield1').animate({
-		top:screen.height/3,
+		top:screen.height/3-100,
 		left:screen.height/3,
-		height:80
+		height:screen.height/3
 	});
 
 });
