@@ -1,35 +1,48 @@
-new WOW().init();
 
 var homeHtml = "snippets/home-snippet.html";
+var delay = 5000;
+$( document ).ready(function(){
+	$(".quote").css({
+		"top":screen.height/2-350,
+		"left":screen.width/5-150
+	}).addClass(" animated zoomIn");
+	$(".cssload-loader-inner").css({
+		"top":"200px",
+		"left":screen.width/2
+	}).addClass("rollIn animated")
+	$.ajax({
+		type:'GET',
+		url: homeHtml,
+		datatype: "html",
+		success: function(response){
+			setTimeout(function(){
+				delaySuccess(response);
+			},delay);
+		}
+	});
+});
 
-$( document ).ready(
-	$ajaxUtils.sendGetRequest(homeHtml,
-		function (responseText) {
-		    document.querySelector("#wrapper")
-		    .innerHTML = responseText;
-		    ajaxFillText();
-		    introAnimations();
-	  	},
-		false
-	));
-
-
+function delaySuccess(data) {
+	$(".loader").addClass("animated zoomOutDown").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+		function(){
+			insertHtml("#wrapper",data);
+			introAnimations();
+		});
+}
 
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
   targetElem.innerHTML = html;
 };
 
-function ajaxFillText(){
-	
-}
+
 
 
 function introAnimations() {
     console.log( "ready!" );
     
 
-    $('.intro').addClass('animated fadeIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+    $('.intro').addClass('animated fadeInDownBig').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
 		function(){
 			console.log("ep");
 			$('.logo').html("<img src='images/logo.png'>").addClass('animated zoomIn');
@@ -67,3 +80,5 @@ function shieldAnimations(){
 			$('.shield3').removeClass('animated bounceIn ').addClass('animated bounce infinite')
 		});;
 	}
+
+new WOW().init();
