@@ -89,6 +89,6 @@ $(document).on("click", ".shield1", function() {
 		left:screen.width/4,
 	});
 	$('.shield1 img').animate({
-		width : screen.height*0.83
+		width : screen.height*0.80
 	});
 });
