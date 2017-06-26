@@ -79,7 +79,7 @@ function shieldAnimations(){
 		function(){
 			$('.shield3').css({'animation-delay':0,'-webkit-animation-delay': 0});
 			$('.shield3').removeClass('animated bounceIn ').addClass('animated bounce infinite')
-		});;
+		});
 	}
 
 
@@ -90,8 +90,6 @@ $(document).on("click", ".shield1", function() {
 	$(".shield1").addClass("animate bounceOut");
 	$(".shield2").addClass("animate bounceOut");
 	$(".shield3").addClass("animate bounceOut");
-
-
 	$('.shield1').animate({
 		top:50,
 		left:screen.width/4,
@@ -99,5 +97,4 @@ $(document).on("click", ".shield1", function() {
 	$('.shield1 img').animate({
 		width : screen.height*0.80
 	});
-
 });
