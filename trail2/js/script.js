@@ -83,7 +83,15 @@ function shieldAnimations(){
 	}
 
 
-$(document).on("click", ".shield1", function() {	
+$(document).on("click", ".shield1", function() {
+	$(".intro-heading").addClass("animate fadeOutUp");
+	$(".extra-cont").addClass("animate fadeOutRight");
+	$(".intro-cont").addClass("animate fadeOutLeft");
+	$(".shield1").addClass("animate bounceOut");
+	$(".shield2").addClass("animate bounceOut");
+	$(".shield3").addClass("animate bounceOut");
+
+
 	$('.shield1').animate({
 		top:50,
 		left:screen.width/4,
@@ -91,4 +99,5 @@ $(document).on("click", ".shield1", function() {
 	$('.shield1 img').animate({
 		width : screen.height*0.80
 	});
+
 });
